@@ -33,4 +33,4 @@ Search for **Lu Aqua** on the Google Play Store.
 
 ---
 
-*Made with ❤ by Girgis Bayoumi*
+*Made with ❤ by Girgis Adel*
