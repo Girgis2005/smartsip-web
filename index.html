@@ -3,212 +3,203 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SmartSip - Stay Hydrated, Stay Healthy</title>
-<meta name="description" content="SmartSip is a smart hydration tracker that helps you stay healthy by reminding you to drink water throughout the day.">
+<title>Lu Aqua — Stay hydrated, stay healthy</title>
+<meta name="description" content="Lu Aqua is a smart hydration tracking app with adaptive reminders, beautiful charts, Health Connect sync, and on-device Smart Coach. Part of the Lu family of apps.">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: linear-gradient(135deg, #00B4DB 0%, #0083B0 50%, #005C97 100%);
+  line-height: 1.7;
+  color: #1a2331;
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
   min-height: 100vh;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
 }
 .hero {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 24px 40px;
   text-align: center;
-  max-width: 800px;
-  padding: 40px 20px;
 }
-.app-icon {
-  width: 180px;
-  height: 180px;
-  background: white;
-  border-radius: 40px;
-  margin: 0 auto 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
-  animation: drop 3s ease-in-out infinite;
+.hero img.logo {
+  width: 140px;
+  height: 140px;
+  border-radius: 32px;
+  box-shadow: 0 12px 40px rgba(12, 58, 110, 0.25);
+  margin-bottom: 24px;
 }
-@keyframes drop {
-  0%, 100% { transform: translateY(0) rotate(-3deg); }
-  50% { transform: translateY(-15px) rotate(3deg); }
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #0C3A6E;
+  margin-bottom: 8px;
 }
-.app-icon::before {
-  content: '💧';
-  font-size: 110px;
-}
-h1 {
-  font-size: 64px;
-  font-weight: 900;
+.hero .tagline {
+  font-size: 20px;
+  color: #1271EA;
+  font-weight: 600;
   margin-bottom: 12px;
-  letter-spacing: 2px;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
-.tagline {
-  font-size: 22px;
-  opacity: 0.95;
-  margin-bottom: 40px;
-  font-weight: 300;
-  line-height: 1.5;
+.hero .blurb {
+  font-size: 16px;
+  color: #5b6b80;
+  max-width: 600px;
+  margin: 0 auto 32px;
 }
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 16px;
-  margin: 40px 0;
-}
-.feature {
-  background: rgba(255,255,255,0.15);
-  padding: 20px 14px;
-  border-radius: 18px;
-  backdrop-filter: blur(10px);
-  transition: transform 0.2s;
-}
-.feature:hover { transform: translateY(-5px); }
-.feature-icon { font-size: 36px; margin-bottom: 10px; }
-.feature-text { font-size: 14px; font-weight: 600; }
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 40px 0;
-  flex-wrap: wrap;
-}
-.stat {
-  text-align: center;
-}
-.stat-number {
-  font-size: 36px;
-  font-weight: 900;
-  display: block;
-}
-.stat-label {
-  font-size: 13px;
-  opacity: 0.85;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.links {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-.btn {
-  background: white;
-  color: #0083B0;
-  padding: 14px 28px;
-  border-radius: 30px;
+.cta {
+  display: inline-block;
+  background: #1271EA;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 99px;
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-  transition: transform 0.2s;
-  display: inline-flex;
+  box-shadow: 0 4px 16px rgba(18, 113, 234, 0.35);
+  transition: transform 0.15s;
+}
+.cta:hover { transform: translateY(-2px); }
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+}
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+}
+h2 {
+  color: #0C3A6E;
+  font-size: 24px;
+  margin-bottom: 16px;
+  display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
-.btn:hover { transform: translateY(-3px); }
-.btn-outline {
-  background: transparent;
-  color: white;
-  border: 2px solid white;
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
 }
-.languages {
-  margin-top: 20px;
+.feature {
+  background: #f1f8ff;
+  padding: 18px;
+  border-radius: 14px;
+  border-left: 4px solid #1271EA;
+}
+.feature .emoji { font-size: 24px; }
+.feature h3 {
+  font-size: 15px;
+  margin: 6px 0 4px;
+  color: #0C3A6E;
+}
+.feature p { font-size: 13px; color: #5b6b80; }
+.links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; }
+.link-pill {
+  background: #f1f5fb;
+  color: #1271EA;
+  padding: 10px 18px;
+  border-radius: 99px;
+  text-decoration: none;
+  font-weight: 600;
   font-size: 14px;
-  opacity: 0.85;
 }
+.link-pill:hover { background: #e2eafd; }
 .footer {
-  margin-top: 60px;
-  opacity: 0.75;
-  font-size: 14px;
-  line-height: 1.6;
+  text-align: center;
+  color: #5b6b80;
+  font-size: 13px;
+  padding: 24px;
 }
-@media (max-width: 600px) {
-  h1 { font-size: 44px; }
-  .tagline { font-size: 17px; }
-  .app-icon { width: 130px; height: 130px; border-radius: 32px; }
-  .app-icon::before { font-size: 75px; }
-  .stat-number { font-size: 28px; }
+.family-badge {
+  display: inline-block;
+  background: #fff3e0;
+  color: #e65100;
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 </style>
 </head>
 <body>
-<div class="hero">
-  <div class="app-icon"></div>
-  <h1>SmartSip</h1>
-  <p class="tagline">Stay hydrated, stay healthy 💧<br>Your smart companion for daily water tracking</p>
+<section class="hero">
+  <div class="family-badge">Part of the Lu family</div>
+  <h1>💧 Lu Aqua</h1>
+  <p class="tagline">Stay hydrated, stay healthy.</p>
+  <p class="blurb">
+    A smart hydration tracking app with adaptive reminders, beautiful charts,
+    Health Connect sync, and an on-device Smart Coach.
+    Built for daily use. Built for privacy.
+  </p>
+  <a class="cta" href="https://play.google.com/store/apps/details?id=com.smartsip.smartsip">Get it on Google Play</a>
+</section>
 
-  <div class="features">
-    <div class="feature">
-      <div class="feature-icon">💧</div>
-      <div class="feature-text">Smart Tracking</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🔔</div>
-      <div class="feature-text">Smart Reminders</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">📊</div>
-      <div class="feature-text">Charts & Stats</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🏆</div>
-      <div class="feature-text">Badges</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🎯</div>
-      <div class="feature-text">Challenges</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">📚</div>
-      <div class="feature-text">Health Articles</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">📤</div>
-      <div class="feature-text">PDF Reports</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🌙</div>
-      <div class="feature-text">Dark Mode</div>
+<div class="container">
+  <div class="card">
+    <h2>🌟 What's inside</h2>
+    <div class="features">
+      <div class="feature">
+        <span class="emoji">💧</span>
+        <h3>Smart Tracking</h3>
+        <p>Log every drink with one tap. Quick-add buttons + custom amounts.</p>
+      </div>
+      <div class="feature">
+        <span class="emoji">🔔</span>
+        <h3>Smart Reminders</h3>
+        <p>Adaptive notifications based on your sleep and Ramadan hours.</p>
+      </div>
+      <div class="feature">
+        <span class="emoji">📊</span>
+        <h3>Charts &amp; Stats</h3>
+        <p>Weekly, monthly, and yearly hydration trends at a glance.</p>
+      </div>
+      <div class="feature">
+        <span class="emoji">🤖</span>
+        <h3>Smart Coach</h3>
+        <p>On-device personalised hints. No cloud, no data sent.</p>
+      </div>
+      <div class="feature">
+        <span class="emoji">⌚</span>
+        <h3>Health Connect</h3>
+        <p>Optional sync with steps and active calories on Android 14+.</p>
+      </div>
+      <div class="feature">
+        <span class="emoji">🌙</span>
+        <h3>Ramadan Mode</h3>
+        <p>Auto-shifts reminders to the iftar → suhoor eating window.</p>
+      </div>
+      <div class="feature">
+        <span class="emoji">🏆</span>
+        <h3>Badges &amp; Streaks</h3>
+        <p>Stay motivated with rewards and personal challenges.</p>
+      </div>
+      <div class="feature">
+        <span class="emoji">🎨</span>
+        <h3>24 Themes</h3>
+        <p>Customise the look. Dark mode and 24 colour themes.</p>
+      </div>
+      <div class="feature">
+        <span class="emoji">🌍</span>
+        <h3>Bilingual</h3>
+        <p>Full English and Arabic. RTL support throughout.</p>
+      </div>
     </div>
   </div>
 
-  <div class="stats">
-    <div class="stat">
-      <span class="stat-number">24</span>
-      <span class="stat-label">Themes</span>
+  <div class="card">
+    <h2>🔗 Links</h2>
+    <div class="links">
+      <a class="link-pill" href="privacy.html">📜 Privacy Policy</a>
+      <a class="link-pill" href="mailto:gogy.bairy@gmail.com">📧 Contact</a>
+      <a class="link-pill" href="https://play.google.com/store/apps/details?id=com.smartsip.smartsip">📱 Google Play</a>
     </div>
-    <div class="stat">
-      <span class="stat-number">2</span>
-      <span class="stat-label">Languages</span>
-    </div>
-    <div class="stat">
-      <span class="stat-number">100%</span>
-      <span class="stat-label">Offline Ready</span>
-    </div>
-  </div>
-
-  <div class="links">
-    <a href="privacy.html" class="btn">📋 Privacy Policy</a>
-    <a href="mailto:gogy.bairy@gmail.com" class="btn btn-outline">✉️ Contact</a>
-  </div>
-
-  <div class="languages">
-    Available in: English &nbsp;·&nbsp; العربية
-  </div>
-
-  <div class="footer">
-    📱 Coming soon to Google Play!<br><br>
-    © 2026 SmartSip · Made with 💙 by Girgis Adel
   </div>
 </div>
+
+<div class="footer">© 2026 Lu Aqua · Made with ❤ by Girgis Bayoumi</div>
 </body>
 </html>
